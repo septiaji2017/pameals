@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logo from "@/assets/fameals-logo.png";
+import logo from "@/assets/fameals-logo-2.png";
 
 const navLinks = [
   { href: "#about", label: "About Us" },
-  { href: "#prices", label: "Price List" },
   { href: "#products", label: "Out Product" },
+  { href: "#prices", label: "Price List" },
   { href: "#seasonal", label: "Special & Seasonal Menus" },  
   { href: "#reviews", label: "Testimonies" },
   { href: "#contact", label: "Contact Us" },

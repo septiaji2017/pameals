@@ -1,8 +1,9 @@
 import React from "react";
 import { Phone, Mail, MapPin, Instagram, Clock, MessageCircle } from "lucide-react";
+import product1 from "@/assets/our-product-1.jpg";
 
 // Replace with your real image or keep placeholder
-const ctaBgImage = "https://placehold.co/628x730"; 
+const ctaBgImage = product1; 
 
 const ContactSection = () => {
   return (
@@ -49,7 +50,7 @@ const ContactSection = () => {
               href="https://wa.me/6281323966051?text=Halo Fameals, saya ingin bertanya tentang menu katering"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 px-8 py-4 bg-[#FCFAF8] rounded-full hover:bg-white transition-all duration-300 group"
+              className="mt-4 inline-flex items-center gap-2 px-8 py-4 bg-[#FCFAF8] rounded-full hover:bg-[#fcfaf8]/90 transition-all duration-300 group"
             >
               <Phone size={20} className="text-[#FF9500] fill-current" />
               <span className="text-[#FF9500] text-base font-['Plus_Jakarta_Sans'] font-semibold">

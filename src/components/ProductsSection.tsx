@@ -4,31 +4,35 @@ import food3 from "@/assets/food-3.jpg";
 import food4 from "@/assets/food-4.jpg";
 import food5 from "@/assets/food-5.jpg";
 import food6 from "@/assets/food-6.jpg";
+import product1 from "@/assets/our-product-1.jpg";
+import product2 from "@/assets/our-product-2.jpg";
+import product3 from "@/assets/our-product-3.jpeg";
+import product4 from "@/assets/our-product-4.jpg";
 
 const products = [
   {
-    image: food3,
+    image: product1,
     title: "Personal Meal Box Dewasa dan Anak",
     description: "Paket makanan lengkap dengan nasi yang disiapkan secara praktis untuk kebutuhan harian dewasa dan anak.",
     tag: "Best Seller", 
     specialBadge: null,
   },
   {
-    image: food4,
+    image: product2,
     title: "Family Set",
     description: "Paket hidangan lauk dan sayur tanpa nasi yang cocok untuk dinikmati bersama keluarga di rumah.",
     tag: "Populer", 
     specialBadge: "Non MSG", 
   },
   {
-    image: food5,
+    image: product3,
     title: "Event Package",
     description: "Paket hidangan untuk berbagai acara seperti pengajian, syukuran, seminar, dan kegiatan lainnya.",
     tag: null,
     specialBadge: null,
   },
   {
-    image: food6,
+    image: product4,
     title: "Kids Event Package",
     description: "Paket khusus anak tersedia dalam dua pilihan, yaitu Bento Kids Characters dan Paket Nasi Kuning.",
     tag: null,

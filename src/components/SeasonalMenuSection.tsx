@@ -1,20 +1,20 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 // Replace these with your real images
-// import lebaranImg from "@/assets/lebaran.jpg";
-// import frozenImg from "@/assets/frozen.jpg";
+import seasonal1 from "@/assets/seasonal-1.jpg";
+import seasonal2 from "@/assets/seasonal-2.jpeg";
 
 const seasonalItems = [
   {
     title: "Menu Spesial Lebaran",
     description: "Paket menu khas Lebaran yang dihadirkan secara terbatas menjelang Hari Raya Idul Fitri dan Hari Raya Idul Adha. Disiapkan dengan cita rasa masakan rumahan yang hangat.",
-    image: "https://placehold.co/720x428", // Replace with real image
+    image: seasonal1, // Replace with real image
     link: "https://pameals.lovable.app/#products"
   },
   {
     title: "Menu Frozen Food",
     description: "Pilihan menu frozen food praktis yang diproduksi dan dibuka secara berkala setiap bulan. Cocok sebagai stok makanan di rumah, dengan kualitas rasa yang tetap terjaga.",
-    image: "https://placehold.co/720x428", // Replace with real image
+    image: seasonal2, // Replace with real image
     link: "https://pameals.lovable.app/#products"
   },
 ];

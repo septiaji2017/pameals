@@ -16,9 +16,10 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <TrustedBySection /> 
-      <AboutSection />
-      <PricingSection />      
+      <AboutSection />  
       <ProductsSection />
+
+      <PricingSection />          
       <SeasonalMenuSection />
       <CareProgramSection />      
       <ReviewsSection />

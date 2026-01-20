@@ -1,10 +1,10 @@
 import { Instagram, Phone, Mail } from "lucide-react";
-import logo from "@/assets/fameals-logo.png";
+import logo from "@/assets/fameals-logo-2.png";
 
 const navLinks = [
   { href: "#about", label: "About Us" },
-  { href: "#prices", label: "Price List" },
   { href: "#products", label: "Out Product" },
+  { href: "#prices", label: "Price List" },
   { href: "#seasonal", label: "Special & Seasonal Menus" },  
   { href: "#reviews", label: "Testimonies" },
   { href: "#contact", label: "Contact Us" },
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Fameals Bandung" className="h-12 mb-4 brightness-0 invert" />
+            <img src={logo} alt="Fameals Bandung" className="h-12 mb-4" />
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Penyedia katering makanan harian sehat non MSG dengan variasi menu 
               dan harga terjangkau di Bandung.

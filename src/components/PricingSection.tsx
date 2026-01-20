@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import product1 from "@/assets/our-product-1.jpg";
 // Make sure to import your background image properly. 
 // If you don't have one yet, use a placeholder or import it like: import bgImage from '@/assets/bg-pricing.jpg'
 
@@ -17,7 +18,7 @@ const PricingSection = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(90deg, rgba(50, 36, 27, 0.90) 0%, rgba(50, 36, 27, 0.70) 50%, rgba(50, 36, 27, 0.40) 100%), url('https://placehold.co/1440x462')` 
+          backgroundImage: `linear-gradient(90deg, rgba(50, 36, 27, 0.90) 0%, rgba(50, 36, 27, 0.70) 50%, rgba(50, 36, 27, 0.40) 100%), url(${product1})` 
           // ⚠️ REPLACE 'https://placehold.co/1440x462' with your real imported image variable e.g. `url(${bgImage})`
         }}
       />

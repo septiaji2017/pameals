@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 // Import your image here. 
-// Example: import careImage from "@/assets/care-program.jpg";
+import careImage from "@/assets/fameals-care.jpg";
 
 const CareProgramSection = () => {
   return (
@@ -61,7 +61,7 @@ const CareProgramSection = () => {
         <div className="flex-1 w-full h-full flex justify-center lg:justify-end">
           <div className="relative w-full max-w-[644px] h-[300px] md:h-[428px] rounded-[32px] overflow-hidden shadow-lg">
              <img 
-               src="https://placehold.co/644x428" // ⚠️ Replace with your real image variable
+               src={careImage} // ⚠️ Replace with your real image variable
                alt="Fameals Care Program"
                className="w-full h-full object-cover"
              />
