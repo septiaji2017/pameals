@@ -1,11 +1,21 @@
 import { Instagram, Phone, Mail } from "lucide-react";
 import logo from "@/assets/fameals-logo.png";
 
+const navLinks = [
+  { href: "#about", label: "About Us" },
+  { href: "#prices", label: "Price List" },
+  { href: "#products", label: "Out Product" },
+  { href: "#seasonal", label: "Special & Seasonal Menus" },  
+  { href: "#reviews", label: "Testimonies" },
+  { href: "#contact", label: "Contact Us" },
+];  
+
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-background py-12 md:py-16">
+    <footer className="bg-[#1B1B1B] text-background py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
@@ -45,31 +55,24 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Menu</h4>
             <ul className="space-y-3">
-              <li>
-                <a href="#about" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Tentang Kami
-                </a>
-              </li>
-              <li>
-                <a href="#products" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Produk
-                </a>
-              </li>
-              <li>
-                <a href="#prices" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Daftar Harga
-                </a>
-              </li>
-              <li>
-                <a href="#reviews" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Testimoni
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Kontak
-                </a>
-              </li>
+              {/* Desktop Navigation */}
+                {navLinks.map((link) => (
+                  <li>
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const element = document.querySelector(link.href);
+                        
+                        element?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="text-background/70 hover:text-background transition-colors text-sm"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
 

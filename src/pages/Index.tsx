@@ -5,6 +5,9 @@ import ProductsSection from "@/components/ProductsSection";
 import PricingSection from "@/components/PricingSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import ContactSection from "@/components/ContactSection";
+import TrustedBySection from "@/components/TrustedBy";
+import SeasonalMenuSection from "@/components/SeasonalMenuSection";
+import CareProgramSection from "@/components/CareProgramSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,9 +15,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <TrustedBySection /> 
       <AboutSection />
+      <PricingSection />      
       <ProductsSection />
-      <PricingSection />
+      <SeasonalMenuSection />
+      <CareProgramSection />      
       <ReviewsSection />
       <ContactSection />
       <Footer />

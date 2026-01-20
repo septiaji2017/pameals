@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+import React from "react";
+import { Leaf } from "lucide-react"; 
 import food3 from "@/assets/food-3.jpg";
 import food4 from "@/assets/food-4.jpg";
 import food5 from "@/assets/food-5.jpg";
@@ -7,113 +8,129 @@ import food6 from "@/assets/food-6.jpg";
 const products = [
   {
     image: food3,
-    title: "Lunch Catering",
-    description: "Katering makan siang dewasa dan anak (Personal & Family)",
-    tag: "Populer",
+    title: "Personal Meal Box Dewasa dan Anak",
+    description: "Paket makanan lengkap dengan nasi yang disiapkan secara praktis untuk kebutuhan harian dewasa dan anak.",
+    tag: "Best Seller", 
+    specialBadge: null,
   },
   {
     image: food4,
-    title: "Frozen Food",
-    description: "Aneka frozen food dan menu spesial siap santap",
-    tag: "Best Seller",
+    title: "Family Set",
+    description: "Paket hidangan lauk dan sayur tanpa nasi yang cocok untuk dinikmati bersama keluarga di rumah.",
+    tag: "Populer", 
+    specialBadge: "Non MSG", 
   },
   {
     image: food5,
-    title: "Tumpeng",
-    description: "Aneka tumpeng regular dan tumpeng anak untuk acara spesial",
+    title: "Event Package",
+    description: "Paket hidangan untuk berbagai acara seperti pengajian, syukuran, seminar, dan kegiatan lainnya.",
     tag: null,
+    specialBadge: null,
   },
   {
     image: food6,
-    title: "Kids Event",
-    description: "Ricebowl anak dan bento characters untuk ulang tahun",
+    title: "Kids Event Package",
+    description: "Paket khusus anak tersedia dalam dua pilihan, yaitu Bento Kids Characters dan Paket Nasi Kuning.",
     tag: null,
+    specialBadge: null,
   },
-];
-
-const moreProducts = [
-  "Paket Nasi Box untuk Seminar & Pengajian",
-  "Paket Snack untuk Acara",
-  "Paket Nasi Box Jumat Berbagi",
-  "Menu Spesial Lebaran",
 ];
 
 const ProductsSection = () => {
   return (
-    <section id="products" className="py-20 md:py-28 bg-muted/30">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">
-            Produk Kami
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Beragam Pilihan Menu Sehat
+    <section id="products" className="w-full py-20 md:py-28 bg-[#F2EEE9]/30">
+      <div className="container mx-auto px-4 md:px-8">
+        
+        {/* Header Section */}
+        <div className="flex flex-col items-center gap-4 mb-14 text-center">
+          <div className="inline-flex items-center px-3 py-1 bg-[#EE7C2B]/10 rounded-full">
+            <span className="text-[#FF9500] text-sm font-['Plus_Jakarta_Sans'] font-semibold uppercase tracking-wider">
+              Our Product
+            </span>
+          </div>
+          <h2 className="text-[#32241B]/90 text-3xl md:text-4xl font-['Plus_Jakarta_Sans'] font-bold leading-tight max-w-2xl">
+            Thoughtfully Crafted for Everyday Moments.
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Dari katering harian hingga acara spesial, kami siap memenuhi kebutuhan kuliner Anda
+          <p className="text-[#32241B]/90 text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed w-full">
+            Fameals menghadirkan hidangan yang disiapkan dengan penuh perhatian sebagai solusi 
+            praktis untuk menemani setiap momen, dengan cita rasa hangat layaknya masakan rumah.
           </p>
         </div>
 
-        {/* Product Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* 
+           Product Cards Grid 
+           FIX: Added 'items-start'. 
+           This prevents non-hovered cards from stretching when a neighbor grows.
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
           {products.map((product, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
+              className="group flex flex-col bg-[#FDFDFC] rounded-2xl overflow-hidden shadow-[0px_4px_20px_-4px_rgba(66,48,36,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="relative h-48 overflow-hidden">
+              {/* Image Container */}
+              <div className="relative h-48 w-full overflow-hidden shrink-0">
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                
                 {product.tag && (
-                  <span className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                    {product.tag}
-                  </span>
+                  <div className="absolute top-3 left-3 px-3 py-1 bg-[#FF9500] rounded-full">
+                    <span className="text-[#FCFAF8] text-xs font-['Plus_Jakarta_Sans'] font-semibold">
+                      {product.tag}
+                    </span>
+                  </div>
                 )}
               </div>
-              <div className="p-5">
-                <h3 className="font-bold text-lg text-card-foreground mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">{product.description}</p>
+
+              {/* Content Container */}
+              <div className="p-5 flex flex-col">
+                
+                {/* Title & Badge */}
+                <div className="flex justify-between items-start gap-2 mb-2">
+                  <h3 className="flex-1 text-[#32241B]/90 text-lg font-['Plus_Jakarta_Sans'] font-bold leading-snug">
+                    {product.title}
+                  </h3>
+                  
+                  {product.specialBadge && (
+                    <div className="flex items-center gap-1 px-2 py-0.5 bg-[#3FA66A]/20 rounded-full shrink-0">
+                      <Leaf size={12} className="text-[#44A178] fill-current" />
+                      <span className="text-[#44A178] text-[10px] font-['Plus_Jakarta_Sans'] font-medium">
+                        {product.specialBadge}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Description */}
+                <p className="text-[#32241B]/70 text-sm font-['Plus_Jakarta_Sans'] font-normal leading-relaxed">
+                  {product.description}
+                </p>
+
+                {/* The Order Button (Expands ONLY this card) */}
+                <a
+                  href={`https://wa.me/6281323966051?text=Halo Fameals, saya tertarik dengan ${product.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    block w-full 
+                    max-h-0 opacity-0 overflow-hidden
+                    group-hover:mt-5 group-hover:max-h-14 group-hover:opacity-100
+                    transition-all duration-300 ease-in-out
+                  "
+                >
+                  <div className="w-full py-2.5 bg-[#FF9500]/90 hover:bg-[#FF9500] text-[#FCFAF8] rounded-full text-center text-sm font-['Plus_Jakarta_Sans'] font-semibold cursor-pointer">
+                    Order
+                  </div>
+                </a>
+
               </div>
             </div>
           ))}
         </div>
 
-        {/* More Products */}
-        <div className="bg-card rounded-2xl p-8 shadow-card">
-          <h3 className="font-bold text-xl text-card-foreground mb-6">
-            Produk Lainnya
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {moreProducts.map((product, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
-              >
-                <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                <span className="text-sm font-medium text-foreground">{product}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="https://wa.me/6281323966051"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-          >
-            Lihat semua menu di Instagram kami
-            <ArrowRight size={18} />
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -1,161 +1,72 @@
-import { Check, Star } from "lucide-react";
-
-const pricingPlans = [
-  {
-    name: "Paket Personal",
-    description: "Untuk kebutuhan makan siang harian",
-    price: "25.000",
-    unit: "/porsi",
-    features: [
-      "Nasi putih",
-      "Lauk utama",
-      "Sayuran segar",
-      "Sambal & lalapan",
-      "Pengantaran gratis*",
-    ],
-    popular: false,
-  },
-  {
-    name: "Paket Family",
-    description: "Untuk keluarga tercinta",
-    price: "85.000",
-    unit: "/4 porsi",
-    features: [
-      "4 porsi lengkap",
-      "2 pilihan lauk",
-      "2 jenis sayuran",
-      "Sambal & pelengkap",
-      "Pengantaran gratis",
-    ],
-    popular: true,
-  },
-  {
-    name: "Paket Kantor",
-    description: "Untuk makan siang karyawan",
-    price: "22.000",
-    unit: "/porsi (min. 20)",
-    features: [
-      "Menu bervariasi harian",
-      "Porsi pas & mengenyangkan",
-      "Packaging rapi",
-      "Tepat waktu",
-      "Invoice bulanan",
-    ],
-    popular: false,
-  },
-];
-
-const additionalPackages = [
-  { name: "Nasi Box Seminar", price: "Mulai 30.000" },
-  { name: "Snack Box", price: "Mulai 12.000" },
-  { name: "Tumpeng Anak", price: "Mulai 150.000" },
-  { name: "Tumpeng Besar", price: "Mulai 350.000" },
-  { name: "Bento Character", price: "Mulai 35.000" },
-  { name: "Frozen Food", price: "Mulai 15.000" },
-];
+import React from "react";
+import { ArrowRight } from "lucide-react";
+// Make sure to import your background image properly. 
+// If you don't have one yet, use a placeholder or import it like: import bgImage from '@/assets/bg-pricing.jpg'
 
 const PricingSection = () => {
   return (
-    <section id="prices" className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">
-            Daftar Harga
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section 
+      id="prices" 
+      className="w-full py-28 relative overflow-hidden flex flex-col items-center justify-center text-center"
+    >
+      {/* 
+        Background Layer with Gradient + Image Overlay 
+        - Linear Gradient: rgba(50, 36, 27, 0.90) -> 0.70 -> 0.40
+        - We use Tailwind's `bg-[url(...)]` utility for the image.
+      */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(90deg, rgba(50, 36, 27, 0.90) 0%, rgba(50, 36, 27, 0.70) 50%, rgba(50, 36, 27, 0.40) 100%), url('https://placehold.co/1440x462')` 
+          // ⚠️ REPLACE 'https://placehold.co/1440x462' with your real imported image variable e.g. `url(${bgImage})`
+        }}
+      />
+
+      <div className="container relative z-10 px-4 flex flex-col items-center gap-14">
+        
+        {/* Text Content */}
+        <div className="max-w-[672px] flex flex-col items-center gap-3">
+          
+          {/* Badge: PRICE LIST */}
+          <div className="inline-flex items-center px-3 py-1 bg-[#533100]/40 rounded-full mb-2 backdrop-blur-sm">
+            <span className="text-[#FCFAF8] text-sm font-['Plus_Jakarta_Sans'] font-semibold uppercase tracking-[0.7px]">
+              Price List
+            </span>
+          </div>
+
+          {/* Title */}
+          <h2 className="text-[#FCFAF8] text-4xl md:text-4xl font-['Plus_Jakarta_Sans'] font-bold leading-tight">
             Harga Terjangkau, Kualitas Terjamin
           </h2>
-          <p className="text-lg text-muted-foreground">
+
+          {/* Subtitle */}
+          <p className="text-[#FCFAF8] text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed mt-1">
             Pilih paket yang sesuai dengan kebutuhan Anda
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-16">
-          {pricingPlans.map((plan, index) => (
-            <div
-              key={index}
-              className={`relative bg-card rounded-2xl p-8 ${
-                plan.popular
-                  ? "ring-2 ring-primary shadow-card-hover scale-105"
-                  : "shadow-card hover:shadow-card-hover"
-              } transition-all duration-300`}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-1.5 rounded-full">
-                    <Star size={14} className="fill-current" />
-                    Terpopuler
-                  </span>
-                </div>
-              )}
+        {/* CTA Button */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in [animation-delay:300ms]">
+          <a 
+            href="https://wa.me/6281323966051" // Direct to WhatsApp for full pricelist
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 px-8 py-4 rounded-full
+              bg-[#FCFAF8]/10 backdrop-blur-[2px] 
+              border-2 border-[#FCFAF8]/70
+              transition-all duration-300 hover:bg-[#EE7C2B]/20
+              text-[#EE7C2B] font-[600]"
+          >
+              <span className="transition-transform duration-300 translate-x-3 group-hover:translate-x-0">
+                Lihat Daftar Harga
+              </span>
+              <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <ArrowRight size={18} />
+              </span>
+          </a>
+        </div>        
 
-              <div className="text-center mb-8">
-                <h3 className="font-bold text-xl text-card-foreground mb-2">
-                  {plan.name}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-6">
-                  {plan.description}
-                </p>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-sm text-muted-foreground">Rp</span>
-                  <span className="text-4xl font-extrabold text-foreground">
-                    {plan.price}
-                  </span>
-                  <span className="text-sm text-muted-foreground">{plan.unit}</span>
-                </div>
-              </div>
 
-              <ul className="space-y-4 mb-8">
-                {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
-                      <Check size={12} className="text-accent" />
-                    </div>
-                    <span className="text-sm text-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="https://wa.me/6281323966051"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block w-full text-center py-3.5 rounded-full font-semibold transition-colors ${
-                  plan.popular
-                    ? "bg-primary text-primary-foreground hover:opacity-90"
-                    : "bg-muted text-foreground hover:bg-muted/80"
-                }`}
-              >
-                Pesan Sekarang
-              </a>
-            </div>
-          ))}
-        </div>
-
-        {/* Additional Packages */}
-        <div className="bg-muted/30 rounded-2xl p-8">
-          <h3 className="font-bold text-xl text-foreground text-center mb-8">
-            Paket Lainnya
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {additionalPackages.map((pkg, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-4 text-center shadow-card hover:shadow-card-hover transition-all"
-              >
-                <p className="font-semibold text-foreground text-sm mb-1">
-                  {pkg.name}
-                </p>
-                <p className="text-primary font-bold text-sm">{pkg.price}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-sm text-muted-foreground mt-6">
-            * Harga dapat berubah sewaktu-waktu. Hubungi kami untuk informasi lebih lanjut.
-          </p>
-        </div>
       </div>
     </section>
   );

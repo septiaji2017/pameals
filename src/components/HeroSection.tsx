@@ -1,4 +1,4 @@
-import { ArrowRight, Leaf, Clock, Users } from "lucide-react";
+import { ArrowRight, Leaf, Clock, ShieldCheck } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
@@ -40,28 +40,45 @@ const HeroSection = () => {
               href="https://wa.me/6281323966051"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-base hover:opacity-90 transition-all hover:gap-3"
+              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-base hover:opacity-90 transition-all"
             >
-              Pesan via WhatsApp
-              <ArrowRight size={18} />
+              {/* 
+                Text Logic:
+                - Default: translate-x-3 (Nudged right to appear centered because the invisible arrow takes space on the right)
+                - Hover: translate-x-0 (Slides left to its natural position)
+              */}
+              <span className="transition-transform duration-300 translate-x-3 group-hover:translate-x-0">
+                Pesan via WhatsApp
+              </span>
+
+              {/* 
+                Arrow Logic:
+                - Always takes up space (so button width never changes)
+                - Default: Invisible (opacity-0)
+                - Hover: Visible (opacity-100)
+              */}
+              <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <ArrowRight size={18} />
+              </span>
             </a>
             <a
-              href="#products"
+              href="https://drive.google.com/file/d/115F-7fRImaPNGjggatod3bw5oTohumG6/view?usp=drive_link"
               className="inline-flex items-center justify-center px-8 py-4 bg-background/10 backdrop-blur-sm text-background border border-background/20 rounded-full font-semibold text-base hover:bg-background/20 transition-colors"
             >
               Lihat Menu
             </a>
           </div>
-
-          {/* Stats */}
+        </div>
+        <div className="w-full">
+        {/* Stats */}
           <div className="flex flex-wrap gap-6 md:gap-10 animate-fade-in [animation-delay:400ms]">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Users size={20} className="text-primary" />
+                <ShieldCheck size={20} className="text-primary" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-background">500+</p>
-                <p className="text-sm text-background/70">Pelanggan Puas</p>
+                <p className="text-2xl font-bold text-background">Non MSG</p>
+                <p className="text-sm text-background/70">Lezat alami & aman dikonsumsi</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -70,7 +87,7 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-2xl font-bold text-background">Tepat Waktu</p>
-                <p className="text-sm text-background/70">Pengantaran</p>
+                <p className="text-sm text-background/70">Sampai sebelum jam makan</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -78,8 +95,8 @@ const HeroSection = () => {
                 <Leaf size={20} className="text-primary" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-background">100%</p>
-                <p className="text-sm text-background/70">Bahan Segar</p>
+                <p className="text-2xl font-bold text-background">Bahan Berkualitas</p>
+                <p className="text-sm text-background/70">Dipasok dari sumber pilihan</p>
               </div>
             </div>
           </div>

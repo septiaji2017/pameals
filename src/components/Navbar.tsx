@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import logo from "@/assets/fameals-logo.png";
 
 const navLinks = [
-  { href: "#about", label: "Tentang Kami" },
-  { href: "#products", label: "Produk" },
-  { href: "#prices", label: "Harga" },
-  { href: "#reviews", label: "Testimoni" },
-  { href: "#contact", label: "Kontak" },
+  { href: "#about", label: "About Us" },
+  { href: "#prices", label: "Price List" },
+  { href: "#products", label: "Out Product" },
+  { href: "#seasonal", label: "Special & Seasonal Menus" },  
+  { href: "#reviews", label: "Testimonies" },
+  { href: "#contact", label: "Contact Us" },
 ];
 
 const Navbar = () => {
@@ -27,7 +28,13 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector(link.href);
+                  
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="text-sm text-[#CC7700] font-medium hover:text-[#FF9500] transition-colors"
               >
                 {link.label}
               </a>
@@ -38,9 +45,10 @@ const Navbar = () => {
             href="https://wa.me/6281323966051"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="hidden md:inline-flex items-center justify-center gap-2  transition-all hover:gap-3 px-6 py-2.5 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:opacity-90"
           >
             Pesan Sekarang
+            <ArrowRight size={18} />
           </a>
 
           {/* Mobile Menu Button */}
@@ -62,7 +70,7 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                  className="text-base text-[#CC7700] font-medium text-muted-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
                 </a>

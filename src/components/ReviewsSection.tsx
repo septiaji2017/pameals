@@ -45,15 +45,6 @@ const reviews = [
   },
 ];
 
-const clients = [
-  "PT. Hartadinata Abadi",
-  "Tiny Wonder Daycare",
-  "Daycare Biofarma",
-  "Telkom Indonesia",
-  "Growing Tree Preschool",
-  "PT. Business Consulting",
-];
-
 const ReviewsSection = () => {
   return (
     <section id="reviews" className="py-20 md:py-28 bg-muted/30">
@@ -78,7 +69,10 @@ const ReviewsSection = () => {
               key={index}
               className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
             >
-              <Quote size={24} className="text-primary/30 mb-4" />
+              <div className="flex w-full items-center justify-center">
+                <Quote size={24} className="text-primary/30 mb-4" />
+              </div>
+
               <p className="text-foreground mb-6 leading-relaxed">
                 "{review.content}"
               </p>
@@ -100,23 +94,7 @@ const ReviewsSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Clients */}
-        <div className="bg-card rounded-2xl p-8 shadow-card">
-          <h3 className="font-bold text-xl text-center text-card-foreground mb-8">
-            Dipercaya Oleh
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="px-6 py-3 bg-muted/50 rounded-full text-sm font-medium text-muted-foreground"
-              >
-                {client}
-              </div>
-            ))}
-          </div>
-        </div>
+      
       </div>
     </section>
   );
