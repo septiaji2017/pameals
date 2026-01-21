@@ -49,7 +49,7 @@ const PricingSection = () => {
         {/* CTA Button */}
         <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in [animation-delay:300ms]">
           <a 
-            href="https://wa.me/6281323966051" // Direct to WhatsApp for full pricelist
+            href="https://drive.google.com/file/d/115F-7fRImaPNGjggatod3bw5oTohumG6/view?usp=drive_link"
             target="_blank" 
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-8 py-4 rounded-full

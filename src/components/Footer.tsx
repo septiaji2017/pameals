@@ -6,8 +6,8 @@ const navLinks = [
   { href: "#products", label: "Out Product" },
   { href: "#prices", label: "Price List" },
   { href: "#seasonal", label: "Special & Seasonal Menus" },  
+  { href: "#care", label: "Fameals' Care Program" },
   { href: "#reviews", label: "Testimonies" },
-  { href: "#contact", label: "Contact Us" },
 ];  
 
 
@@ -22,8 +22,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Fameals Bandung" className="h-12 mb-4" />
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Penyedia katering makanan harian sehat non MSG dengan variasi menu 
-              dan harga terjangkau di Bandung.
+              Penyedia layanan katering harian serta berbagai acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk memenuhi kebutuhan individu, keluarga, maupun institusi.
             </p>
             <div className="flex gap-3">
               <a
@@ -53,7 +52,6 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Menu</h4>
             <ul className="space-y-3">
               {/* Desktop Navigation */}
                 {navLinks.map((link) => (
@@ -83,7 +81,7 @@ const Footer = () => {
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Phone size={16} />
                 0813-2396-6051
-              </li>
+              </li>         
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Mail size={16} />
                 famealsfoods@gmail.com

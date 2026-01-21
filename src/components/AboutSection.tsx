@@ -42,7 +42,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         
         {/* Header Section */}
-        <div className="max-w-4xl mb-12 flex flex-col items-start gap-4">
+        <div className="w-full mb-12 flex flex-col items-start gap-4">
           
           {/* Badge: About Us */}
           <div className="inline-flex items-center px-3 py-1 bg-[#EE7C2B]/10 rounded-full">
@@ -57,10 +57,8 @@ const AboutSection = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-[#32241B]/70 text-lg font-['Plus_Jakarta_Sans'] leading-relaxed max-w-3xl">
-            Fameals Bandung merupakan penyedia layanan katering harian serta berbagai acara, 
-            yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk 
-            memenuhi kebutuhan individu, keluarga, maupun institusi.
+          <p className="text-[#32241B]/70 text-lg font-['Plus_Jakarta_Sans'] leading-relaxed w-full">
+            Fameals Bandung merupakan penyedia layanan katering harian serta berbagai acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk memenuhi kebutuhan individu, keluarga, maupun institusi.
           </p>
         </div>
 

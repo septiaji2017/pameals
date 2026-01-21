@@ -1,5 +1,5 @@
 import { ArrowRight, Leaf, Clock, ShieldCheck } from "lucide-react";
-import heroBanner from "@/assets/hero-banner.jpg";
+import heroBanner from "@/assets/hero-banner-v2.png";
 
 const HeroSection = () => {
   return (

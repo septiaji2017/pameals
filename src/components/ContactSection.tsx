@@ -75,7 +75,7 @@ const ContactSection = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-[#CC7700] text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed mb-8">
+            <p className="text-[#6F645D] text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed mb-8">
               Hubungi kami untuk informasi lebih lanjut, pemesanan, atau konsultasi menu 
               sesuai kebutuhan Anda. Tim kami siap membantu dengan senang hati dan responsif.
             </p>
@@ -131,8 +131,8 @@ const ContactSection = () => {
 
               {/* Location */}
               <div className="flex items-center gap-4 p-4 rounded-xl bg-[#F2EEE9]/50">
-                <div className="w-12 h-12 rounded-full bg-[#F2EEE9] flex items-center justify-center shrink-0">
-                  <MapPin size={22} className="text-[#CC7700]" />
+                <div className="w-12 h-12 rounded-full bg-[#EE7C2B]/10 flex items-center justify-center shrink-0">
+                  <MapPin size={22} className="text-[#FF9500]" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[#CC7700] text-sm font-['Plus_Jakarta_Sans']">Lokasi</span>
@@ -142,8 +142,8 @@ const ContactSection = () => {
 
               {/* Hours */}
               <div className="flex items-center gap-4 p-4 rounded-xl bg-[#F2EEE9]/50">
-                <div className="w-12 h-12 rounded-full bg-[#F2EEE9] flex items-center justify-center shrink-0">
-                  <Clock size={22} className="text-[#CC7700]" />
+                <div className="w-12 h-12 rounded-full bg-[#EE7C2B]/10 flex items-center justify-center shrink-0">
+                  <Clock size={22} className="text-[#FF9500]" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[#CC7700] text-sm font-['Plus_Jakarta_Sans']">Jam Operasional</span>

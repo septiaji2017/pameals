@@ -1,12 +1,19 @@
 import React from "react";
 
+import BC from "@/assets/pt-business-consulting.png";
+import GT from "@/assets/growing-tree.png";
+import TI from "@/assets/telkom-indonesia.png";
+import DB from "@/assets/daycare-biofarma.png";
+import TD from "@/assets/tiny-wonder-daycare.png";
+import HA from "@/assets/hartadinanta-abadi.png";
+
 const clients = [
-  { name: "PT. Hartadinata Abadi", logo: "https://placehold.co/21x21" },
-  { name: "Tiny Wonder Daycare", logo: "https://placehold.co/21x21" },
-  { name: "Daycare Biofarma", logo: "https://placehold.co/32x21" },
-  { name: "Telkom Indonesia", logo: "https://placehold.co/32x21" },
-  { name: "Growing Tree Preschool", logo: "https://placehold.co/47x21" },
-  { name: "PT. Business Consulting", logo: "https://placehold.co/47x21" },
+  { name: "PT. Hartadinata Abadi", logo: HA},
+  { name: "Tiny Wonder Daycare", logo: TD },
+  { name: "Daycare Biofarma", logo: DB },
+  { name: "Telkom Indonesia", logo: TI },
+  { name: "Growing Tree Preschool", logo: GT },
+  { name: "PT. Business Consulting", logo: BC },
 ];
 
 const TrustedBy = () => {

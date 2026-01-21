@@ -2,46 +2,40 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Ibu Sari",
-    role: "Pelanggan Rumahan",
+    name: "Farah Salman",
+    role: "Ibu Rumah Tangga",
     content:
-      "Makanannya enak dan sehat, anak-anak suka! Pengantaran selalu tepat waktu. Sudah langganan 6 bulan dan sangat puas.",
-    rating: 5,
+      "Masakannya enak sekali dan anak saya suka banget! Sangat membantu di minggu-minggu sibuk saat saya tidak sempat masak di rumah.",
   },
   {
-    name: "Bapak Rudi",
-    role: "HRD PT. Maju Bersama",
+    name: "Prisca",
+    role: "Ibu Rumah Tangga",
     content:
-      "Untuk katering kantor, Fameals sangat recommended. Menu bervariasi, porsi pas, dan karyawan senang. Harga juga terjangkau.",
-    rating: 5,
+      "Senang banget, sekarang anak saya jadi doyan makan. Padahal sebelumnya susah sekali kalau disuruh makan ayam, tapi pas coba menu sempol Fameals langsung lahap!",
   },
   {
-    name: "Ibu Dewi",
-    role: "Guru TK Tunas Bangsa",
+    name: "Rasima Guntursa",
+    role: "Karyawan Swasta",
     content:
-      "Snack untuk anak-anak murid selalu fresh dan sehat. Orangtua murid juga senang karena tidak pakai MSG.",
-    rating: 5,
+      "Rasa makanannya enak dan pelayanannya sangat baik. Yang paling saya apresiasi adalah pengantarannya yang selalu tertib dan tepat waktu.",
   },
   {
-    name: "Mas Adi",
-    role: "Event Organizer",
+    name: "Farida",
+    role: "Profesional",
     content:
-      "Sudah beberapa kali pakai Fameals untuk event seminar. Nasi box-nya selalu dapat pujian dari peserta!",
-    rating: 5,
+      "Masakannya enak banget! Bahkan suami saya yang berasal dari luar negeri pun sangat cocok dan suka sekali dengan menu harian dari Fameals.",
   },
   {
-    name: "Ibu Lina",
-    role: "Pelanggan Family",
+    name: "Hanataria",
+    role: "Wiraswasta",
     content:
-      "Paket family-nya worth it banget! 4 porsi cukup untuk sekeluarga. Rasanya homemade dan konsisten enaknya.",
-    rating: 5,
+      "Berkat Fameals, ibu saya yang sedang sakit jadi mau makan lagi karena rasanya enak. Pelayanannya ramah dan kurirnya pun sangat bersemangat!",
   },
   {
-    name: "Bapak Hendra",
-    role: "Pelanggan Kantor",
+    name: "Mirna Zaharni",
+    role: "Ibu Rumah Tangga",
     content:
-      "Admin-nya ramah dan responsif. Bisa request menu khusus juga. Pelayanan terbaik!",
-    rating: 5,
+      "Ibu mertua saya suka karena rasanya enak dan pilihannya bervariasi. Senang bisa memberikan katering sehat tanpa MSG yang disukai seluruh keluarga.",
   },
 ];
 
@@ -51,9 +45,12 @@ const ReviewsSection = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">
-            Testimoni
-          </span>
+          {/* Badge */}
+          <div className="inline-flex items-center px-3 py-1 bg-[#EE7C2B]/10 rounded-full">
+            <span className="text-[#FF9500] text-sm font-['Plus_Jakarta_Sans'] font-semibold uppercase tracking-wider">
+              Testimoni
+            </span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Apa Kata Pelanggan Kami
           </h2>
@@ -67,9 +64,9 @@ const ReviewsSection = () => {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
+              className="bg-card flex flex-col justify-between rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
             >
-              <div className="flex w-full items-center justify-center">
+              <div className="flex w-full items-center">
                 <Quote size={24} className="text-primary/30 mb-4" />
               </div>
 
@@ -79,16 +76,7 @@ const ReviewsSection = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-semibold text-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.role}</p>
-                </div>
-                <div className="flex gap-0.5">
-                  {Array.from({ length: review.rating }).map((_, i) => (
-                    <Star
-                      key={i}
-                      size={16}
-                      className="fill-primary text-primary"
-                    />
-                  ))}
+                  <p className="text-sm text-[#CC7700]">{review.role}</p>
                 </div>
               </div>
             </div>

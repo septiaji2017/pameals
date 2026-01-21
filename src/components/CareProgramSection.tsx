@@ -40,7 +40,7 @@ const CareProgramSection = () => {
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in [animation-delay:300ms]">
             <a 
-              href="https://wa.me/6281323966051" // Direct to WhatsApp
+              href="https://wa.me/6281323966051?text=Halo Fameals, saya ingin pesan program Sharing Meals, Spreading Care untuk hari Jumat"
               target="_blank" 
               rel="noopener noreferrer"
               //gap-2 px-6 py-3
