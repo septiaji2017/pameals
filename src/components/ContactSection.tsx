@@ -139,18 +139,6 @@ const ContactSection = () => {
                   <span className="text-[#32241B]/90 text-base font-['Plus_Jakarta_Sans'] font-semibold">Komplek Panghegar Permai, Kota Bandung</span>
                 </div>
               </div>
-
-              {/* Hours */}
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-[#F2EEE9]/50">
-                <div className="w-12 h-12 rounded-full bg-[#EE7C2B]/10 flex items-center justify-center shrink-0">
-                  <Clock size={22} className="text-[#FF9500]" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[#CC7700] text-sm font-['Plus_Jakarta_Sans']">Jam Operasional</span>
-                  <span className="text-[#32241B]/90 text-base font-['Plus_Jakarta_Sans'] font-semibold">Senin - Sabtu, 07.00 - 17.00 WIB</span>
-                </div>
-              </div>
-
             </div>
           </div>
 
