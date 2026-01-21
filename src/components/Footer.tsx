@@ -1,4 +1,4 @@
-import { Instagram, Phone, Mail } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/fameals-logo-2.png";
 
 const navLinks = [
@@ -81,14 +81,18 @@ const Footer = () => {
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Phone size={16} />
                 0813-2396-6051
-              </li>         
+              </li>     
+              <li className="flex items-center gap-3 text-background/70 text-sm">
+                <Instagram size={16} />
+                @fameals
+              </li>                  
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Mail size={16} />
                 famealsfoods@gmail.com
               </li>
               <li className="flex items-center gap-3 text-background/70 text-sm">
-                <Instagram size={16} />
-                @fameals
+                <MapPin size={16} />
+                Komplek Panghegar Permai, Kota Bandung
               </li>
             </ul>
           </div>

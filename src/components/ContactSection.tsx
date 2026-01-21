@@ -136,7 +136,7 @@ const ContactSection = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[#CC7700] text-sm font-['Plus_Jakarta_Sans']">Lokasi</span>
-                  <span className="text-[#32241B]/90 text-base font-['Plus_Jakarta_Sans'] font-semibold">Bandung, Jawa Barat</span>
+                  <span className="text-[#32241B]/90 text-base font-['Plus_Jakarta_Sans'] font-semibold">Komplek Panghegar Permai, Kota Bandung</span>
                 </div>
               </div>
 

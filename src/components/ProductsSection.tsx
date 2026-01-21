@@ -1,5 +1,5 @@
 import React from "react";
-import { Leaf } from "lucide-react"; 
+import { Leaf, FlameIcon } from "lucide-react"; 
 import food3 from "@/assets/food-3.jpg";
 import food4 from "@/assets/food-4.jpg";
 import food5 from "@/assets/food-5.jpg";
@@ -21,7 +21,7 @@ const products = [
     image: product2,
     title: "Family Set",
     description: "Paket hidangan lauk dan sayur tanpa nasi yang cocok untuk dinikmati bersama keluarga di rumah.",
-    tag: "Populer", 
+    tag: "Best Seller", 
     specialBadge: "Non MSG", 
   },
   {
@@ -82,7 +82,8 @@ const ProductsSection = () => {
                 
                 {product.tag && (
                   <div className="absolute top-3 left-3 px-3 py-1 bg-[#FF9500] rounded-full">
-                    <span className="text-[#FCFAF8] text-xs font-['Plus_Jakarta_Sans'] font-semibold">
+                    <span className="text-[#FCFAF8] text-xs font-['Plus_Jakarta_Sans'] font-semibold flex items-center justify-center gap-2">
+                      <FlameIcon size={16} />
                       {product.tag}
                     </span>
                   </div>
