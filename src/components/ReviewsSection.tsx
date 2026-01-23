@@ -2,16 +2,16 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Farah Salman",
-    role: "Ibu Rumah Tangga",
+    name: "Natasya",
+    role: "Mahasiswi",
     content:
-      "Masakannya enak sekali dan anak saya suka banget! Sangat membantu di minggu-minggu sibuk saat saya tidak sempat masak di rumah.",
+      "Halo Kak, makasih banyak ya buat catering seminggunya. Jujur ngebantu banget soalnya posisi saya di Palembang, sedangkan Kakek di Bandung. Kemarin Kakek bilang makanannya enak dan buah-buahannya seger. Pengirimannya juga selalu tepat waktu. Recommended banget!",
   },
   {
-    name: "Prisca",
-    role: "Ibu Rumah Tangga",
+    name: "Thia Astisia",
+    role: "Dokter Gigi Spesialis",
     content:
-      "Senang banget, sekarang anak saya jadi doyan makan. Padahal sebelumnya susah sekali kalau disuruh makan ayam, tapi pas coba menu sempol Fameals langsung lahap!",
+      "Kateringnya sudah sampai ya, Kak. Alhamdulillah seneng banget liatnya, anak saya yang biasanya susah makan eh kali ini abisnya cepet banget! Suka banget dia sama menu ayam dan tahunya. Makasih ya!",
   },
   {
     name: "Rasima Guntursa",
@@ -21,7 +21,7 @@ const reviews = [
   },
   {
     name: "Farida",
-    role: "Profesional",
+    role: "Ibu Rumah Tangga",
     content:
       "Masakannya enak banget! Bahkan suami saya yang berasal dari luar negeri pun sangat cocok dan suka sekali dengan menu harian dari Fameals.",
   },

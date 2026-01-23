@@ -7,7 +7,7 @@ import food6 from "@/assets/food-6.jpg";
 import product1 from "@/assets/our-product-1.jpg";
 import product2 from "@/assets/our-product-2.jpg";
 import product3 from "@/assets/our-product-3.jpeg";
-import product4 from "@/assets/our-product-4.jpg";
+import product4 from "@/assets/our-product-4.jpeg";
 
 const products = [
   {
@@ -20,9 +20,9 @@ const products = [
   {
     image: product2,
     title: "Family Set",
-    description: "Paket hidangan lauk dan sayur tanpa nasi yang cocok untuk dinikmati bersama keluarga di rumah.",
+    description: "Paket makanan lengkap tanpa nasi yang cocok untuk dinikmati bersama keluarga di rumah.",
     tag: "Best Seller", 
-    specialBadge: "Non MSG", 
+    specialBadge: null, 
   },
   {
     image: product3,
@@ -34,7 +34,7 @@ const products = [
   {
     image: product4,
     title: "Kids Event Package",
-    description: "Paket khusus anak tersedia dalam dua pilihan, yaitu Bento Kids Characters dan Paket Nasi Kuning.",
+    description: "Paket khusus anak tersedia dalam dua pilihan, yaitu Bento Kids Characters dan Paket Nasi Kuning, dengan tampilan menarik, cita rasa lezat, serta bahan berkualitas pilihan.",
     tag: null,
     specialBadge: null,
   },
@@ -57,7 +57,7 @@ const ProductsSection = () => {
           </h2>
           <p className="text-[#32241B]/90 text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed w-full">
             Fameals menghadirkan hidangan yang disiapkan dengan penuh perhatian sebagai solusi 
-            praktis untuk menemani setiap momen, dengan cita rasa hangat layaknya masakan rumah.
+            praktis untuk menemani setiap momen, dengan cita rasa lezat layaknya masakan rumah.
           </p>
         </div>
 

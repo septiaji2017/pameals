@@ -28,8 +28,7 @@ const CareProgramSection = () => {
           <div className="text-[#32241B]/90 text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed space-y-4">
             <p>
               Setiap hari Jumat, Fameals Bandung menghadirkan paket nasi bagi yang membutuhkan, 
-              sebagai pengingat untuk selalu peduli dan berbagi kebaikan. Paket tersedia mulai 
-              Rp25.000/pax. Info selanjutnya dapat menghubungi Admin Fameals Bandung.
+              sebagai pengingat untuk selalu peduli dan berbagi kebaikan. Info selanjutnya dapat menghubungi Admin Fameals Bandung.
             </p>
             <p>
               Terima kasih atas kepedulian dan kepercayaannya untuk turut berbagi kebaikan 

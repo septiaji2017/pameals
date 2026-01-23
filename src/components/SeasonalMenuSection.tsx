@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import MenuModal, { MenuItem } from "./MenuModal";
 
 // Images Assets
-import seasonal1 from "@/assets/seasonal-1.jpg";
+import seasonal1 from "@/assets/kupad.jpg";
 import seasonal2 from "@/assets/seasonal-2.jpeg";
 import OporAyam from "@/assets/opor-ayam.jpg"; 
 import SambalGoreng from "@/assets/sambal-goreng.jpg"; 
@@ -88,14 +88,14 @@ const seasonalItems = [
   {
     id: "lebaran",
     title: "Menu Spesial Lebaran",
-    description: "Paket menu khas Lebaran yang dihadirkan secara terbatas menjelang Hari Raya Idul Fitri dan Hari Raya Idul Adha. Disiapkan dengan cita rasa masakan rumahan yang hangat.",
+    description: "Paket menu khas Lebaran yang dihadirkan menjelang Hari Raya Idul Fitri dan Hari Raya Idul Adha. Disiapkan dengan cita rasa serta kualitas terbaik, cocok untuk dinikmati bersama keluarga dan kerabat di momen kebersamaan.",
     image: seasonal1, // Replace with real image
     link: "https://pameals.lovable.app/#products"
   },
   {
     id: "frozen",
     title: "Menu Frozen Food",
-    description: "Pilihan menu frozen food praktis yang diproduksi dan dibuka secara berkala setiap bulan. Cocok sebagai stok makanan di rumah, dengan kualitas rasa yang tetap terjaga.",
+    description: "Pilihan menu frozen food yang praktis sebagai stok makanan di rumah, dengan kualitas rasa lezat dan mudah disajikan kapan saja.",
     image: seasonal2, // Replace with real image
     link: "https://pameals.lovable.app/#products"
   },
@@ -130,12 +130,12 @@ const SeasonalMenuSection = () => {
             </div>
 
             <h2 className="text-[#32241B]/90 text-3xl md:text-4xl font-['Plus_Jakarta_Sans'] font-bold leading-tight">
-              Harga Terjangkau, Kualitas Terjamin.
+              Exclusively Prepared for Moments Together
             </h2>
 
             <p className="text-[#32241B]/90 text-lg font-['Plus_Jakarta_Sans'] font-normal leading-relaxed w-full">
               Dalam kategori ini, Fameals Bandung menghadirkan paket khusus yang tersedia pada 
-              waktu tertentu, dibuat untuk momen spesial dan program pilihan di luar menu reguler.
+              waktu tertentu, dibuat untuk momen spesial.
             </p>
           </div>
 

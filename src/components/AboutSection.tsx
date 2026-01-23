@@ -6,7 +6,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Halal Certified",
-    description: "Menu berganti setiap hari dan disusun secara seimbang agar tetap lezat, berkualitas, dan tidak membosankan.",
+    description: "Diproses sesuai standar halal, tersertifikasi resmi, serta memiliki legalitas usaha (NIB)",
   },
   {
     icon: Truck, // Replaced abstract shape with Truck/Clock concept
@@ -31,7 +31,7 @@ const features = [
   {
     icon: Leaf,
     title: "Fresh & Quality Ingredients",
-    description: "Mengutamakan penggunaan bahan baku pilihan berkualitas dengan proses pengolahan yang higienis dan terstandar.",
+    description: "Mengutamakan penggunaan bahan baku pilihan berkualitas dengan proses pengolahan yang higienis.",
   },
 ];
 
@@ -58,8 +58,16 @@ const AboutSection = () => {
 
           {/* Description */}
           <p className="text-[#32241B]/70 text-lg font-['Plus_Jakarta_Sans'] leading-relaxed w-full">
-            Fameals Bandung merupakan penyedia layanan katering harian serta berbagai acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk memenuhi kebutuhan individu, keluarga, maupun institusi.
+            Mengusung konsep Family Meals, Fameals berkomitmen menghadirkan hidangan halal berkualitas yang
+            mencerminkan cita rasa masakan rumahan. Setiap porsi disiapkan melalui pemilihan bahan baku 
+            yang berkualitas, proses pengelolaan yang terstandar, serta penerapan kebersihan yang terjaga.
           </p>
+
+          <p className="text-[#32241B]/70 text-lg font-['Plus_Jakarta_Sans'] leading-relaxed w-full">
+            Bagi kami, Fameals bukan sekadar penyedia hidangan, melainkan solusi praktis yang menghadirkan
+            kenyamanan dan kehangatan layaknya menikmati makan di rumah, baik untuk kebutuhan konsumsi sehari-hari
+            maupun berbagai kegiatan lainnya.
+          </p>          
         </div>
 
         {/* Features Grid */}

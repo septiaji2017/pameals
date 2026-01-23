@@ -59,7 +59,7 @@ const PricingSection = () => {
               text-[#EE7C2B] font-[600]"
           >
               <span className="transition-transform duration-300 translate-x-3 group-hover:translate-x-0">
-                Lihat Daftar Harga
+                Price List Fameals Bandung
               </span>
               <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <ArrowRight size={18} />

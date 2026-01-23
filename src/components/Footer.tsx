@@ -6,7 +6,7 @@ const navLinks = [
   { href: "#products", label: "Out Product" },
   { href: "#prices", label: "Price List" },
   { href: "#seasonal", label: "Special & Seasonal Menus" },  
-  { href: "#care", label: "Fameals' Care Program" },
+  { href: "#care", label: "Fameals Care Program" },
   { href: "#reviews", label: "Testimonies" },
 ];  
 
@@ -22,7 +22,9 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Fameals Bandung" className="h-12 mb-4" />
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Penyedia layanan katering harian serta berbagai acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk memenuhi kebutuhan individu, keluarga, maupun institusi.
+            Fameals Bandung merupakan penyedia layanan katering harian serta katering berbagai 
+            acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk
+            memenuhi kebutuhan individu, keluarga, maupun institusi.  
             </p>
             <div className="flex gap-3">
               <a

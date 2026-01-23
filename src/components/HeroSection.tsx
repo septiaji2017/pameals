@@ -31,8 +31,9 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-background/80 mb-8 leading-relaxed animate-fade-in [animation-delay:200ms]">
-            Fameals Bandung menyediakan katering makanan harian sehat tanpa MSG dengan 
-            variasi menu lezat dan harga terjangkau untuk keluarga, sekolah, dan kantor.
+            Fameals Bandung merupakan penyedia layanan katering harian serta katering berbagai 
+            acara, yang menyajikan beragam pilihan menu tanpa MSG (monosodium glutamat) untuk
+            memenuhi kebutuhan individu, keluarga, maupun institusi.
           </p>
 
           {/* CTA Buttons */}
@@ -62,12 +63,6 @@ const HeroSection = () => {
                 <ArrowRight size={18} />
               </span>
             </a>
-            <a
-              href="https://drive.google.com/file/d/115F-7fRImaPNGjggatod3bw5oTohumG6/view?usp=drive_link"
-              className="inline-flex items-center justify-center px-8 py-4 bg-background/10 backdrop-blur-sm text-background border border-background/20 rounded-full font-semibold text-base hover:bg-background/20 transition-colors"
-            >
-              Lihat Menu
-            </a>
           </div>
         </div>
         <div className="w-full">
@@ -79,16 +74,7 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-2xl font-bold text-background">Non MSG</p>
-                <p className="text-sm text-background/70">Lezat alami & aman dikonsumsi</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Clock size={20} className="text-primary" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-background">Tepat Waktu</p>
-                <p className="text-sm text-background/70">Sampai sebelum jam makan</p>
+                <p className="text-sm text-background/70">Pilihan Tepat dan Asupan Terjaga</p>
               </div>
             </div>
             <div className="flex items-center gap-3">

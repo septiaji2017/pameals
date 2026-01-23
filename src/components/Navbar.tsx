@@ -69,7 +69,12 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector(link.href);
+                    
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }}                  
                   className="text-base text-[#CC7700] font-medium text-muted-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
