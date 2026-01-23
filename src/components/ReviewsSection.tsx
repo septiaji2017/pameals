@@ -37,6 +37,18 @@ const reviews = [
     content:
       "Ibu mertua saya suka karena rasanya enak dan pilihannya bervariasi. Senang bisa memberikan katering sehat tanpa MSG yang disukai seluruh keluarga.",
   },
+  {
+    name: "Farah Salman",
+    role: "Ibu Rumah Tangga",
+    content:
+      "Masakannya enak sekali dan anak saya suka banget! Sangat membantu di minggu-minggu sibuk saat saya tidak sempat masak di rumah.",
+  },
+  {
+    name: "Prisca",
+    role: "Ibu Rumah Tangga",
+    content:
+      "Senang banget, sekarang anak saya jadi doyan makan. Padahal sebelumnya susah sekali kalau disuruh makan ayam, tapi pas coba menu sempol Fameals langsung lahap!",
+  },    
 ];
 
 const ReviewsSection = () => {
@@ -60,11 +72,11 @@ const ReviewsSection = () => {
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-card flex flex-col justify-between rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
+              className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-card flex flex-col justify-between rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
             >
               <div className="flex w-full items-center">
                 <Quote size={24} className="text-primary/30 mb-4" />

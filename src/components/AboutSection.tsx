@@ -65,7 +65,7 @@ const AboutSection = () => {
 
           <p className="text-[#32241B]/70 text-lg font-['Plus_Jakarta_Sans'] leading-relaxed w-full">
             Bagi kami, Fameals bukan sekadar penyedia hidangan, melainkan solusi praktis yang menghadirkan
-            kenyamanan dan kehangatan layaknya menikmati makan di rumah, baik untuk kebutuhan konsumsi sehari-hari
+            kenyamanan dan kehangatan layaknya menikmati makanan di rumah, baik untuk kebutuhan konsumsi sehari-hari
             maupun berbagai kegiatan lainnya.
           </p>          
         </div>
